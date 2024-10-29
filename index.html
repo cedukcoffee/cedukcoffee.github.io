@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceduk | Coffee</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+    <header>
+        <div >
+            <img class="navbar-logo" src="/images/logoCeduk.png" alt="logo-navbar">
+
+            <div class="navbar-menu">
+                <p class="nav-text"><a href="#section-menu">Menú</a></p>
+            </div>
+
+            <div class="navbar-gps">
+                <p class="nav-text"><a href="#section-localizaciones">Localizaciones</a></p>
+            </div>
+
+            <div class="navbar-contacto">
+                <p class="nav-text"><a href="#footer" >Sobre nosotros</a></p>
+            </div>
+            <div class="navbar-carrito">
+                <img id="cart-icon" src="images/carrito-de-compras.png" alt="">
+                <span id="count-carrito">0</span>
+            </div>     
+    </header>
+
+    <div id="cart-modal" class="carrito-modal">
+        <div class="modal-cart-content">
+            <span class="close-cart">&times;</span>
+            <h3 id="h3-cart">Carrito de compras</h3>
+            <ul id="cart-items"></ul>
+            <p id="cart-total">Total: $0.00</p>
+            <button id="clear-cart">Vaciar carrito</button>
+        </div>
+    </div>
+
+    <nav class="home">
+        <div class="logo-info">
+            <img class="logo-home" src="/images/logoCeduk.png" alt="logo-home">
+            <p class="info-home">Cafetería CEDUK, 15 años en la industria, más de 20 sucursales y amables empleados todo el tiempo.</p>
+        </div>
+    </nav>
+
+    <nav class="conteiner-menu">
+
+        <h1 id="section-menu">Menú</h1>
+        <div class="subtitle-1">Bebidas calientes</div>
+        <div class="subtitle-2">Frapuchinos</div>
+        <div class="subtitle-3">Alimentos</div>
+
+        <div class="conteiner-items">
+
+            <div class="conteiner-product">
+                <a href="" class="openModal" data-modal="modal1">
+                    <img id="img" src="/images/img1.jpeg" alt="">
+                    <p id="title-product">Espresso</p>
+                </a>
+            </div>
+            <div class="conteiner-product">
+                <a href="" class="openModal" data-modal="modal2">
+                    <img id="img" src="/images/img2.jpeg" alt="">
+                    <p id="title-product">Latte</p>
+                </a>
+            </div>
+            <div class="conteiner-product">
+                <a href="#" class="openModal" data-modal="modal3">
+                    <img id="img" src="/images/img3.jpeg" alt="">
+                    <p id="title-product">Mocha</p>
+                </a>
+            </div>
+            <div class="conteiner-product">
+                <a href="#" class="openModal" data-modal="modal4">
+                    <img id="img" src="/images/img4.jpeg" alt="">
+                    <p id="title-product">Chocolate caliente</p>
+                </a>
+            </div>
+            <div class="conteiner-product">
+                <a href="#" class="openModal" data-modal="modal5">
+                    <img id="img" src="/images/img5.jpeg" alt="">
+                    <p id="title-product">Café frapuccino</p>
+                </a>
+            </div>
+            <div class="conteiner-product">
+                <a href="#" class="openModal" data-modal="modal6">
+                    <img id="img" src="/images/img6.jpeg" alt="">
+                    <p id="title-product">Mocha frapuccino</p>
+                </a>
+            </div>
+            <div class="conteiner-product">
+                <a href="#" class="openModal" data-modal="modal7">
+                    <img id="img" src="/images/img7.jpeg" alt="">
+                    <p id="title-product">Caramel frapuccino</p>
+                </a>
+            </div>
+            <div class="conteiner-product">
+                <a href="#" class="openModal" data-modal="modal8">
+                    <img id="img" src="/images/img8.jpeg" alt="">
+                    <p id="title-product">Cookies n cream </p>
+                </a>
+            </div>
+            <div class="conteiner-product">
+                <a href="#" class="openModal" data-modal="modal9">
+                    <img id="img" src="/images/img9.jpeg" alt="">
+                    <p id="title-product">Grilled cheese</p>
+                </a>
+            </div>
+            <div class="conteiner-product">
+                <a href="#" class="openModal" data-modal="modal10">
+                    <img id="img" src="/images/img10.jpeg" alt="">
+                    <p id="title-product">Donas a elección</p>
+                </a>
+            </div>
+            <div class="conteiner-product">
+                <a href="#" class="openModal" data-modal="modal11">
+                    <img id="img" src="/images/img11.jpeg" alt="">
+                    <p id="title-product">Galleta</p>
+                </a>
+            </div>
+            <div class="conteiner-product">
+                <a href="#" class="openModal" data-modal="modal12">
+                    <img id="img" src="/images/img12.jpeg" alt="">
+                    <p id="title-product">Croissant</p>
+                </a>
+            </div>
+
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-navbar">
+                        <img class="logo-modal" src="/images/logoCeduk.png" alt="">
+                        <h3 class="h3-modal">Cafetería Ceduk</h3>
+                    </div>
+                    <div class="modal-info">
+                        <img class="modal-img" src="/images/img1.jpeg" alt="">
+                        <h1 class="modal-title">Espresso</h1>
+                        <p class="description-modal">Esta es una descripción de un espresso</p>
+                        <p class="txt-modal">16oz <br>$59.99</p>
+                        <button class="btn-modal" data-product="Espresso" data-price="59.99">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-navbar">
+                        <img class="logo-modal" src="/images/logoCeduk.png" alt="">
+                        <h3 class="h3-modal">Cafetería Ceduk</h3>
+                    </div>
+                    <div class="modal-info">
+                        <img class="modal-img" src="/images/img2.jpeg" alt="">
+                        <h1 class="modal-title">Latte</h1>
+                        <p class="description-modal">Esta es una descripción de un latte</p>
+                        <p class="txt-modal">16oz <br>$69.99</p>
+                        <button class="btn-modal" data-product="Latte" data-price="69.99">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-navbar">
+                        <img class="logo-modal" src="/images/logoCeduk.png" alt="">
+                        <h3 class="h3-modal">Cafetería Ceduk</h3>
+                    </div>
+                    <div class="modal-info">
+                        <img class="modal-img" src="/images/img3.jpeg" alt="">
+                        <h1 class="modal-title">Mocha</h1>
+                        <p class="description-modal">Esta es una descripción de un mocha</p>
+                        <p class="txt-modal">16oz <br>$69.99</p>
+                        <button class="btn-modal" data-product="Mocha" data-price="69.99">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal4" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-navbar">
+                        <img class="logo-modal" src="/images/logoCeduk.png" alt="">
+                        <h3 class="h3-modal">Cafetería Ceduk</h3>
+                    </div>
+                    <div class="modal-info">
+                        <img class="modal-img" src="/images/img4.jpeg" alt="">
+                        <h1 class="modal-title">Chocolate Caliente</h1>
+                        <p class="description-modal">Esta es una descripción de un chocolate caliente</p>
+                        <p class="txt-modal">16oz <br>$69.99</p>
+                        <button class="btn-modal" data-product="Chocolate Caliente" data-price="69.99">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal5" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-navbar">
+                        <img class="logo-modal" src="/images/logoCeduk.png" alt="">
+                        <h3 class="h3-modal">Cafetería Ceduk</h3>
+                    </div>
+                    <div class="modal-info">
+                        <img class="modal-img" src="/images/img5.jpeg" alt="">
+                        <h1 class="modal-title">Café frapuccino</h1>
+                        <p class="description-modal">Esta es una descripción de un café frapuchino</p>
+                        <p class="txt-modal">16oz <br>$79.99</p>
+                        <button class="btn-modal" data-product="Café Frapuccino" data-price="79.99">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal6" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-navbar">
+                        <img class="logo-modal" src="/images/logoCeduk.png" alt="">
+                        <h3 class="h3-modal">Cafetería Ceduk</h3>
+                    </div>
+                    <div class="modal-info">
+                        <img class="modal-img" src="/images/img6.jpeg" alt="">
+                        <h1 class="modal-title">Mocha frapuccino</h1>
+                        <p class="description-modal">Esta es una descripción de un mocha frapuccino</p>
+                        <p class="txt-modal">16oz <br>$79.99</p>
+                        <button class="btn-modal" data-product="Mocha Frapuccino" data-price="79.99">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal7" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-navbar">
+                        <img class="logo-modal" src="/images/logoCeduk.png" alt="">
+                        <h3 class="h3-modal">Cafetería Ceduk</h3>
+                    </div>
+                    <div class="modal-info">
+                        <img class="modal-img" src="/images/img7.jpeg" alt="">
+                        <h1 class="modal-title">Caramel frapuccino</h1>
+                        <p class="description-modal">Esta es una descripción de un caramel frapuccino</p>
+                        <p class="txt-modal">16oz <br>$79.99</p>
+                        <button class="btn-modal" data-product="Caramel Frapuccino" data-price="79.99">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal8" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-navbar">
+                        <img class="logo-modal" src="/images/logoCeduk.png" alt="">
+                        <h3 class="h3-modal">Cafetería Ceduk</h3>
+                    </div>
+                    <div class="modal-info">
+                        <img class="modal-img" src="/images/img8.jpeg" alt="">
+                        <h1 class="modal-title">Cookies n cream</h1>
+                        <p class="description-modal">Esta es una descripción de un cookies n cream</p>
+                        <p class="txt-modal">16oz <br>$79.99</p>
+                        <button class="btn-modal" data-product="Cookies n Cream" data-price="79.99">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal9" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-navbar">
+                        <img class="logo-modal" src="/images/logoCeduk.png" alt="">
+                        <h3 class="h3-modal">Cafetería Ceduk</h3>
+                    </div>
+                    <div class="modal-info">
+                        <img class="modal-img" src="/images/img9.jpeg" alt="">
+                        <h1 class="modal-title">Grilled cheese</h1>
+                        <p class="description-modal">Esta es una descripción de un grilled cheese</p>
+                        <p class="txt-modal">16oz <br>$49.99</p>
+                        <button class="btn-modal" data-product="Grilled Cheese" data-price="49.99">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal10" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-navbar">
+                        <img class="logo-modal" src="/images/logoCeduk.png" alt="">
+                        <h3 class="h3-modal">Cafetería Ceduk</h3>
+                    </div>
+                    <div class="modal-info">
+                        <img class="modal-img" src="/images/img10.jpeg" alt="">
+                        <h1 class="modal-title">Donas a elección</h1>
+                        <p class="description-modal">Esta es una descripción de donas a elección</p>
+                        <p class="txt-modal">1pz <br>$49.99</p>
+                        <button class="btn-modal" data-product="Donas" data-price="49.99">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal11" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-navbar">
+                        <img class="logo-modal" src="/images/logoCeduk.png" alt="">
+                        <h3 class="h3-modal">Cafetería Ceduk</h3>
+                    </div>
+                    <div class="modal-info">
+                        <img class="modal-img" src="/images/img11.jpeg" alt="">
+                        <h1 class="modal-title">Galleta</h1>
+                        <p class="description-modal">Esta es una descripción de una galleta</p>
+                        <p class="txt-modal">1pz <br>$49.99</p>
+                        <button class="btn-modal" data-product="Galleta" data-price="49.99">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal12" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-navbar">
+                        <img class="logo-modal" src="/images/logoCeduk.png" alt="">
+                        <h3 class="h3-modal">Cafetería Ceduk</h3>
+                    </div>
+                    <div class="modal-info">
+                        <img class="modal-img" src="/images/img12.jpeg" alt="">
+                        <h1 class="modal-title">Croissant</h1>
+                        <p class="description-modal">Esta es una descripción de un croissant</p>
+                        <p class="txt-modal">1pz <br>$49.99</p>
+                        <button class="btn-modal" data-product="Croissant" data-price="49.99">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <nav id="section-localizaciones">
+        <a href="">
+            <img id="imgps" src="/images/imageGPS.png" alt="">
+        </a>
+        <div class="ubicaciones">
+            <div class="ubi">
+                <h4 class="ubi-title">Mitras norte</h4>
+                <div class="ubi-conteiner"></div>
+                <p class="direction">Av. Abraham Lincoln, Jardín de las minas,64300 Monterrey, N.L.</p>
+                <p class="number">+528126698840</p>
+            </div>
+            <div class="ubi">
+                <h4 class="ubi-title">Guadalupe</h4>
+                <div class="ubi-conteiner"></div>
+                <p class="direction">Av.Los Leones 3401, Colonia Cumbres, 64610 Monterrey, N.L.</p>
+                <p class="number">+528182938490</p>
+            </div>
+            <div class="ubi">
+                <h4 class="ubi-title">San Nicolás</h4>
+                <div class="ubi-conteiner"></div>
+                <p class="direction">Av. Independencia 102, Colonia San Ángel, 64790 Monterrey, N.L.</p>
+                <p class="number">+528193827382</p>
+            </div>
+            <div class="ubi">
+                <h4 class="ubi-title">Santa Catarina</h4>
+                <div class="ubi-conteiner"></div>
+                <p class="direction">Av. Lázaro Cárdenas 2500, Colonia Oriente, 66269 Monterrey, N.L.</p>
+                <p class="number">+528190023922</p>
+            </div> 
+        </div>
+    </nav>
+
+    <footer id="footer">
+        <div class="section1">
+            <div class="conteiner-enlace-text">
+                <a class="enlace-text" href="#">Sobre nosotros</a>
+                <a class="enlace-text" href="#">Atención al cliente</a>
+                <a class="enlace-text" href="#">Trabaja con nosotros</a>
+                <a class="enlace-text" href="#">Contáctanos</a>
+                <a class="enlace-text" href="#">Formas de comprar</a>
+            </div>
+        </div>
+        <div class="section2">
+            <div class="conteiner-enlace-logo">
+                <a href="#"><img src="/images/insta.png" class="enlace-logo" alt="">
+                </a>
+                <a href="#">
+                    <img src="/images/linkedin.png" class="enlace-logo" alt="">
+                </a>
+                <a href="#">
+                    <img src="/images/facebook.png" class="enlace-logo" alt="">
+                </a>
+                <a href="#">
+                    <img src="/images/x.png" class="enlace-logo" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

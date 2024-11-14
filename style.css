@@ -247,13 +247,22 @@ a {
     background-color: rgb(26, 54, 54);
 }
 
+
 #imgps {
-    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
     height: 300px;
-    margin: 40px 0 20px 100px;
+    border-radius: 20px;
+    margin: 10px 10px 10px 55px;
 }
 
 .ubicaciones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
     width: 100%;
     height: 400px;
 }
@@ -468,3 +477,146 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-logo, .navbar-menu, .navbar-contacto {
+        width: auto;
+        float: left;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar-gps {
+        display: none;
+    }
+
+    .home {
+        height: 450px;
+        padding: 20px;
+        width: 100%; 
+        background-size: cover;
+        background-position: center;
+    }
+
+    .logo-home {
+        height: 200px;
+        width: 220px;
+        margin: 90px 0 10px 50px;
+    }
+
+    .logo-info {
+        font-size: 0.8em;
+    }
+
+    #cart-icon {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .conteiner-menu {
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #section-menu {
+        display: none;
+    }
+
+    #title-product {
+        color: #0d1b1b;
+        background-color: #fff;
+        border-radius: 10px;
+    }    
+
+    .subtitle-1, .subtitle-2, .subtitle-3 {
+        display: none;
+    }
+
+    .conteiner-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        left: 0;
+        padding: 10px;
+        height: auto;
+    }
+
+    .conteiner-product {
+        height: 120px;
+        width: 120px;
+        margin: 30px;
+        background: none;
+    }
+
+    #img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 100px;
+    }
+
+    .modal-content {
+        width: 90%;
+        margin: 5% auto;
+    }
+
+
+    #section-localizaciones {
+        display: none;
+    }
+
+    #footer {
+        display: none;
+    }
+
+
+}
+
+/* Para pantallas medianas (tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    .conteiner-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .conteiner-product {
+        height: 160px;
+        width: 160px;
+    }
+
+    .conteiner-product {
+        background-color: #1A3636;
+    }
+
+    .modal-content {
+        width: 70%;
+    }
+
+    #section-localizaciones {
+        display: none;
+    }
+
+    #footer {
+        display: none;
+    }
+}
+
+/* Para pantallas grandes */
+@media (min-width: 1025px) {
+    .conteiner-items {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+
+

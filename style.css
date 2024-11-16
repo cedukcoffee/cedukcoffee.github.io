@@ -505,8 +505,9 @@ footer {
     }
 
     .logo-home {
-        height: 200px;
-        width: 220px;
+        max-width: 220px;
+        width: 100%;
+        height: auto;
         margin: 90px 0 10px 50px;
     }
 
@@ -530,11 +531,6 @@ footer {
         display: none;
     }
 
-    #title-product {
-        color: #0d1b1b;
-        background-color: #fff;
-        border-radius: 10px;
-    }    
 
     .subtitle-1, .subtitle-2, .subtitle-3 {
         display: none;
@@ -545,23 +541,23 @@ footer {
         grid-template-columns: repeat(3, 1fr);
         width: 100%;
         left: 0;
-        padding: 10px;
+        padding: 10px 10px 140px 10px;
         height: auto;
     }
 
     .conteiner-product {
-        height: 120px;
-        width: 120px;
+        height: 7.6em;
+        width: 7.6em;
         margin: 30px;
-        background: none;
     }
 
     #img {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100px;
-        width: 100px;
+        height: 6em;
+        width: 6em;
+        margin-top: 14px;
     }
 
     .modal-content {
@@ -578,7 +574,6 @@ footer {
         display: none;
     }
 
-
 }
 
 /* Para pantallas medianas (tablets) */
@@ -593,10 +588,6 @@ footer {
         width: 160px;
     }
 
-    .conteiner-product {
-        background-color: #1A3636;
-    }
-
     .modal-content {
         width: 70%;
     }
@@ -606,8 +597,20 @@ footer {
     }
 
     #footer {
+        font-size: smaller;
+    }
+
+    .subtitle-1, .subtitle-2, .subtitle-3 {
         display: none;
     }
+
+    #img {
+        height: 8.5em;
+        width: 8.5em;
+        border-radius: 50%;
+        margin-top: 12px;
+    }
+    
 }
 
 /* Para pantallas grandes */
